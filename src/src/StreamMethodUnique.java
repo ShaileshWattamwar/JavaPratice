@@ -18,6 +18,8 @@ public class StreamMethodUnique {
         unique.add(11);
 
         unique.stream().distinct().forEach(i -> System.out.println("unique values :" + i));
-
+        System.out.println("-------------------------------");
+        long total = unique.stream().count();
+        System.out.println(" total count number:" + total);
     }
 }
